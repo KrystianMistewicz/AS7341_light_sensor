@@ -20,7 +20,6 @@ class Application(tk.Tk):
     
     def start_stop(self):
         self.measure = not self.measure
-        print('btn pressed'+str(self.measure))
         if self.measure:
             self.start_stop_btn.configure(text='STOP')
             self.continuous_measurement()
